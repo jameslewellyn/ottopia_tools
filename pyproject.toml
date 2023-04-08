@@ -3,15 +3,15 @@ requires = ["poetry>=1.0"]
 build-backend = "poetry.masonry.api"
 
 [tool.poetry]
-name = "python_poetry_template"
+name = "ottopia_tools"
 version = "0.0.1"
-description = "Package Description"
+description = "Tools for Ottopia"
 authors = ["James Lewellyn <lewellyn.james@gmail.com>"]
 maintainers = ["James Lewellyn <lewellyn.james@gmail.com>"]
 license = "MIT"
 
 [tool.poetry.scripts]
-some_executable = 'python_poetry_template.some_executable:main'
+some_executable = 'ottopia_tools.some_executable:main'
 
 [tool.poetry.dependencies]
 python = "^3.10"
