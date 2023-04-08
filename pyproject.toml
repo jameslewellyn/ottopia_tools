@@ -1,6 +1,6 @@
 [build-system]
-requires = ["poetry>=1.0"]
-build-backend = "poetry.masonry.api"
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "ottopia_tools"
@@ -15,8 +15,7 @@ some_executable = 'ottopia_tools.some_executable:main'
 
 [tool.poetry.dependencies]
 python = "^3.10"
-pydantic = "*"
-pyyaml = "*"
+web3 = "*"
 
 [tool.poetry.dev-dependencies]
 black = "*"
