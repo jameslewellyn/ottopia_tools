@@ -10,13 +10,13 @@ logging.basicConfig(level=logging.INFO)
 account_address = "0xa6c4F123b99eaF51E63dD31497f4921aD6761230"
 
 # The address of the Matic token contract on the Matic network
-matic_token_address = "0x0000000000000000000000000000000000001010"
+matic_token_address = "0x6e8A9Cb6B1E73e9fCe3FD3c68b5af9728F708eB7"
 
 # The decimal places of the Matic token (18 decimal places for most tokens)
 matic_token_decimal_places = 18
 
 # Load the Matic token contract ABI
-with open("matic_token_abi.json", "r") as f:
+with open("otter1.json", "r") as f:
     matic_token_abi = json.load(f)
 
 
@@ -29,4 +29,4 @@ def main() -> None:
     balance = matic_token_contract.functions.balanceOf(account_address).call()
     balance_in_matic_tokens = balance / (10**matic_token_decimal_places)
 
-    logging.info(f"{balance_in_matic_tokens = }")
+    logging.info(f"{balance = }")
